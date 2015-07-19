@@ -12,8 +12,8 @@ int main(int argc, char *argv) {
 	enum bool veryTrue = 2;
 
 	/* Attempt to change a const may throw a compile time error (see K&R section 2.4) */
-	const int i = 0;
-	/* i = 1; */
+	const int ci = 0;
+	/* ci = 1; */
 
 	/* Print the include file search paths */
 	system("touch test.c");
@@ -73,6 +73,11 @@ int main(int argc, char *argv) {
 
 	printf("Min value for long double: %Lf\n", LDBL_MIN);
 	printf("Max value for long double: %Lf\n", LDBL_MAX);
+
+	/* Test type conversions */
+	char c = 255;
+	int i = c;
+	printf("Char with high bit = 1, converted to int: %d\n", i);
 
 	return 0;
 }
