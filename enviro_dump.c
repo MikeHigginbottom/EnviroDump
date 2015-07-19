@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <float.h>
 #include <stdlib.h>
-#include "debug.h"
+#include <stdio.h>
 
 int main(int argc, char *argv) {
 	printf("EnviroDump\n");

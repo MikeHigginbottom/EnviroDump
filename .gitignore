@@ -21,6 +21,7 @@
 *.dylib
 
 # Executables
+enviro_dump
 *.exe
 *.out
 *.app
