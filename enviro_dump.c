@@ -31,6 +31,9 @@ int main(int argc, char *argv) {
 	int modResult = -3%2;
 	printf("Negative integer modulus sign (result of -3%%2 as per K&R section 2.5): %d\n", modResult);
 
+	signed int rightShift = 0 >> 1;
+	printf("Signed int shift (as per K&R section 2.9): %d\n", rightShift);
+
 	/* Print ranges of types */
 	printf("Min value for signed char: %d\n", SCHAR_MIN);
 	printf("Max value for signed char: %d\n", SCHAR_MAX);
